@@ -72,6 +72,4 @@ function logIn (){
     });
 }
 
-
-
 logIn();

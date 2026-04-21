@@ -3,7 +3,13 @@ let password = "password123"; // This is a variable declaration and assignment. 
 var isLoggedIn = false; // This is a variable declaration and assignment. We are creating a variable named 'isLoggedIn' and assigning it the value false.
 const pi = 3.14; // This is a constant declaration and assignment. We are creating a constant named 'pi' and assigning it the value 3.14. Constants cannot be reassigned.
 let testVar = 67;
+// const does not allow reassign but does not prevent mutations:
+const MY_OBJECT = { key: "value" }; 
+MY_OBJECT.key = "otherValue"; //Properties of object assigned to const are not protected
+const MY_ARRAY = ["HTML", "CSS"]; 
+MY_ARRAY.push("JAVASCRIPT"); // const Arrays are not protected
 
+console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];
 console.log("Value of userName before the if block: " + userName);  
 if (password === "password123") { // This is a conditional statement that checks if the value of 'password' is equal to "password123".
     let password = "newPassword456";

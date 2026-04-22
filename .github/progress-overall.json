@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "Overall",
-  "message": "60%",
-  "color": "green"
+  "label": "Week Overall",
+  "message": "21%",
+  "color": "red"
 }

@@ -135,7 +135,7 @@ Reference: Functions
 
 ### LEARN:
 - [ ] Object structure
-- [ ] Accessing properties
+- [X] Accessing properties
 
 ### DO:
 - [ ] Create user object:

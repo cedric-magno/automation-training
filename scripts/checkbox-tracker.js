@@ -3,7 +3,7 @@ const fs = require("fs");
 const readme = fs.readFileSync("Automation Training Plan.md", "utf8");
 
 // Match week headers like:
-// # 🔵 WEEK 0–1: Something
+// # 🔵 WEEK 0-1: Something
 const weekRegex = /^#.*WEEK\s([0-9]+(?:-[0-9]+)?)/gm;
 
 const matches = [...readme.matchAll(weekRegex)];
@@ -19,7 +19,7 @@ for (let i = 0; i < matches.length; i++) {
 
   const block = readme.slice(startIndex, endIndex);
 
-  const weekLabel = current[1]; // "0–1", "2", etc.
+  const weekLabel = current[1]; // "0-1", "2", etc.
 
   const total = (block.match(/- \[[ xX]\]/g) || []).length;
   const done = (block.match(/- \[[xX]\]/g) || []).length;
@@ -36,6 +36,14 @@ for (let i = 0; i < matches.length; i++) {
 
 // helper badge generator
 function badge(label, percent) {
+  if (label === "Overall") {
+    return {
+      schemaVersion: 1,
+      label: "Overall",
+      message: `${percent}%`,
+      color: percent < 30 ? "red" : percent < 70 ? "yellow" : "green"
+    };
+  }
   return {
     schemaVersion: 1,
     label: `Week ${label}`,

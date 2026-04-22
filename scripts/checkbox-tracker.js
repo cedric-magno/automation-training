@@ -4,7 +4,7 @@ const readme = fs.readFileSync("Automation Training Plan.md", "utf8");
 
 // Match week headers like:
 // # 🔵 WEEK 0–1: Something
-const weekRegex = /^#.*WEEK\s([0-9]+(?:–[0-9]+)?)/gm;
+const weekRegex = /^#.*WEEK\s([0-9]+(?:-[0-9]+)?)/gm;
 
 const matches = [...readme.matchAll(weekRegex)];
 

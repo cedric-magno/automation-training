@@ -6,31 +6,45 @@
 
 ### Weekly Progress
 
-![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0-1.json)
+![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0.json)
 ![Week 2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week2.json)
 ![Week 3](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week3.json)
-![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4-5.json)
+![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4.json)
 ![Week 6](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week6.json)
-![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7-8.json)
+![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7.json)
 
 ---
 
 # 📚 TABLE OF CONTENTS
 
-- [HOW TO USE THIS PLAN](#how-to-use-this-daily-plan)
-- [WEEK 0-1: JavaScript](#week-01-javascript-for-testers-foundation)
-  - [Day 1](#day-1--variables--console)
-  - [Day 2](#day-2--functions-core)
-  - [Day 3](#day-3--arrays)
-  - [Day 4](#day-4--objects-very-important)
-  - [Day 5](#day-5--combine-arrays--objects)
-  - [Day 6](#day-6--asyncawait-critical)
-  - [Day 7](#day-7--mini-project)
-- [WEEK 2: Cypress Basics](#week-2-cypress-basics)
-- [WEEK 3: Cypress Advanced](#week-3-cypress-advanced)
-- [WEEK 4-5: TypeScript](#week-45-typescript-transition)
-- [WEEK 6: Framework Design](#week-6-framework-design)
-- [WEEK 7-8: Playwright + CI/CD](#week-78-playwright--cicd)
+- [HOW TO USE THIS PLAN](#-how-to-use-this-daily-plan)
+- [WEEK 0-1: JavaScript](#-week-0-1-javascript-for-testers-foundation)
+  - [Day 1](#-day-1--variables--console)
+  - [Day 2](#-day-2--functions-core)
+  - [Day 3](#-day-3--arrays)
+  - [Day 4](#-day-4--objects-very-important)
+  - [Day 5](#-day-5--combine-arrays--objects)
+  - [Day 6](#-day-6--asyncawait-critical)
+  - [Day 7](#-day-7--mini-project)
+- [WEEK 2: Cypress Basics](#-week-2-cypress-basics)
+  - [Day 1 - Setup Cypress](#-day-1---setup-cypress)
+  - [Day 2 - First Test](#-day-2---first-test)
+  - [Day 3 - Login Test](#-day-3---login-test)
+  - [Day 4 - Selectors](#-day-4---selectors)
+  - [Day 5 - Form Testing](#-day-5---form-testing)
+  - [Day 6 - Refactor](#-day-6---refactor)
+  - [Day 7 - Review](#-day-7---review)
+- [WEEK 3: Cypress Advanced](#-week-3-cypress-advanced)
+  - [Day 1 - Fixtures](#-day-1---fixtures)
+  - [Day 2 - Custom Commands](#-day-2---custom-commands)
+  - [Day 3 - API Testing](#-day-3---api-testing)
+  - [Day 4 - POST Request](#-day-4---post-request)
+  - [Day 5 - Hooks](#-day-5---hooks)
+  - [Day 6 - Refactor](#-day-6---refactor-1)
+  - [Day 7 - Review](#-day-7---review--prep-for-ts)
+- [WEEK 4-5: TypeScript](#--week-4-5-typescript-transition)
+- [WEEK 6: Framework Design](#-week-6-framework-design)
+- [WEEK 7-8: Playwright + CI/CD](#-week-7-8-playwright--cicd)
 
 ---
 

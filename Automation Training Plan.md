@@ -49,6 +49,7 @@ Always:
 ---
 
 # 🔵 WEEK 0–1: JavaScript for Testers (FOUNDATION)
+![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0-1.json)
 
 📚 Use:
 - JavaScript.info → Fundamentals section  

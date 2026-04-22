@@ -1,3 +1,9 @@
+/*
+* Day 1 - Variables + Console Exercises
+*   Declare and initialize variables
+*   Use console.log() to output values
+*/
+
 var userName = "John"; // This is a variable declaration and assignment. We are creating a variable named 'userName' and assigning it the value "John".
 let password = "password123"; // This is a variable declaration and assignment. We are creating a variable named 'password' and assigning it the value "password123".
 var isLoggedIn = false; // This is a variable declaration and assignment. We are creating a variable named 'isLoggedIn' and assigning it the value false.

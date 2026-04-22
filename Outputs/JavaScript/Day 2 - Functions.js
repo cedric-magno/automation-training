@@ -1,3 +1,9 @@
+/*
+* Day 2 - Functions Exercises
+*   Declare and initialize functions
+*   Use functions to perform operations
+*/
+
 const readline = require('readline');
 
 // Create interface for input/output

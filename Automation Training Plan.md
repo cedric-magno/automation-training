@@ -6,19 +6,19 @@
 
 ### Weekly Progress
 
-![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0–1.json)
+![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0-1.json)
 ![Week 2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week2.json)
 ![Week 3](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week3.json)
-![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4–5.json)
+![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4-5.json)
 ![Week 6](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week6.json)
-![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7–8.json)
+![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7-8.json)
 
 ---
 
 # 📚 TABLE OF CONTENTS
 
 - [HOW TO USE THIS PLAN](#how-to-use-this-daily-plan)
-- [WEEK 0–1: JavaScript](#week-01-javascript-for-testers-foundation)
+- [WEEK 0-1: JavaScript](#week-01-javascript-for-testers-foundation)
   - [Day 1](#day-1--variables--console)
   - [Day 2](#day-2--functions-core)
   - [Day 3](#day-3--arrays)
@@ -28,9 +28,9 @@
   - [Day 7](#day-7--mini-project)
 - [WEEK 2: Cypress Basics](#week-2-cypress-basics)
 - [WEEK 3: Cypress Advanced](#week-3-cypress-advanced)
-- [WEEK 4–5: TypeScript](#week-45-typescript-transition)
+- [WEEK 4-5: TypeScript](#week-45-typescript-transition)
 - [WEEK 6: Framework Design](#week-6-framework-design)
-- [WEEK 7–8: Playwright + CI/CD](#week-78-playwright--cicd)
+- [WEEK 7-8: Playwright + CI/CD](#week-78-playwright--cicd)
 
 ---
 
@@ -44,12 +44,12 @@ Always:
 - Push code to GitHub  
   `C:\Users\Cedric\ced-projects\automation-training`  
   https://github.com/cedric-magno/automation-training  
-- Write 1–2 notes (what you learned / struggled with)
+- Write 1-2 notes (what you learned / struggled with)
 
 ---
 
-# 🔵 WEEK 0–1: JavaScript for Testers (FOUNDATION)
-![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0–1.json)
+# 🔵 WEEK 0-1: JavaScript for Testers (FOUNDATION)
+![Week 0-1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0-1.json)
 
 📚 Use:
 - JavaScript.info → Fundamentals section  
@@ -57,7 +57,7 @@ Always:
 
 ---
 
-## 🟢 DAY 1 – Variables + Console - COMPLETED
+## 🟢 DAY 1 - Variables + Console - COMPLETED
 
 ### LEARN:
 - [x] What is a variable?
@@ -89,7 +89,7 @@ Reference: Grammars and types
 
 ---
 
-## 🟢 DAY 2 – Functions (CORE) - COMPLETED
+## 🟢 DAY 2 - Functions (CORE) - COMPLETED
 
 ### LEARN:
 - [x] What is a function?
@@ -112,7 +112,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 3 – Arrays
+## 📅 DAY 3 - Arrays
 
 ### LEARN:
 - [x] Arrays and looping concepts
@@ -131,7 +131,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 4 – Objects (VERY IMPORTANT)
+## 📅 DAY 4 - Objects (VERY IMPORTANT)
 
 ### LEARN:
 - [ ] Object structure
@@ -150,7 +150,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 5 – Combine Arrays + Objects
+## 📅 DAY 5 - Combine Arrays + Objects
 
 ### LEARN:
 - [ ] Real-world data structures
@@ -168,7 +168,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 6 – Async/Await (CRITICAL)
+## 📅 DAY 6 - Async/Await (CRITICAL)
 
 ### LEARN:
 - [ ] What is async/await?
@@ -185,7 +185,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 7 – Mini Project
+## 📅 DAY 7 - Mini Project
 
 ### BUILD:
 - [ ] Fake login system
@@ -207,7 +207,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 1 – Setup Cypress
+## 📅 DAY 1 - Setup Cypress
 
 ### LEARN:
 - [ ] What is Cypress?
@@ -222,7 +222,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 2 – First Test
+## 📅 DAY 2 - First Test
 
 ### LEARN:
 - [ ] cy.visit
@@ -240,7 +240,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 3 – Login Test
+## 📅 DAY 3 - Login Test
 
 ### DO:
 - [ ] Enter username/password
@@ -255,7 +255,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 4 – Selectors
+## 📅 DAY 4 - Selectors
 
 ### LEARN:
 - [ ] Good vs bad selectors
@@ -268,7 +268,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 5 – Form Testing
+## 📅 DAY 5 - Form Testing
 
 ### DO:
 - [ ] Fill form fields
@@ -279,7 +279,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 6 – Refactor
+## 📅 DAY 6 - Refactor
 
 ### DO:
 - [ ] Clean code
@@ -290,7 +290,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 7 – Review
+## 📅 DAY 7 - Review
 
 ### DO:
 - [ ] Fix failing tests
@@ -301,43 +301,43 @@ Reference: Functions
 # 🔵 WEEK 3: Cypress Advanced
 ![Week 3](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week3.json)
 
-## 📅 DAY 1 – Fixtures
+## 📅 DAY 1 - Fixtures
 - [ ] Create JSON test data
 - [ ] Use cy.fixture()
 
 ### OUTPUT:
 - [ ] External test data used
 
-## 📅 DAY 2 – Custom Commands
+## 📅 DAY 2 - Custom Commands
 - [ ] Create cy.login()
 
 ### OUTPUT:
 - [ ] Reusable command
 
-## 📅 DAY 3 – API Testing
+## 📅 DAY 3 - API Testing
 - [ ] cy.request GET
 
 ### OUTPUT:
 - [ ] API test
 
-## 📅 DAY 4 – POST Request
+## 📅 DAY 4 - POST Request
 - [ ] Send POST request
 - [ ] Validate response
 
 ### OUTPUT:
 - [ ] API validation test
 
-## 📅 DAY 5 – Hooks
+## 📅 DAY 5 - Hooks
 - [ ] beforeEach setup
 
 ### OUTPUT:
 - [ ] Cleaner test flow
 
-## 📅 DAY 6 – Refactor
+## 📅 DAY 6 - Refactor
 - [ ] Remove duplication
 - [ ] Improve structure
 
-## 📅 DAY 7 – REVIEW + PREP FOR TS
+## 📅 DAY 7 - REVIEW + PREP FOR TS
 
 ### CHECK:
 - [ ] Comfortable with Cypress?
@@ -345,21 +345,21 @@ Reference: Functions
 
 ---
 
-# 🔁 WEEK 4–5: TypeScript Transition
-![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4–5.json)
+# 🔁 WEEK 4-5: TypeScript Transition
+![Week 4-5](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4-5.json)
 
 📚 Use:
 - TypeScript Documentation
 
 ## 📅 KEY DAILY PATTERN
 
-### Day 1–2:
+### Day 1-2:
 - [ ] Add types to variables
 
-### Day 3–4:
+### Day 3-4:
 - [ ] Type functions
 
-### Day 5–6:
+### Day 5-6:
 - [ ] Convert Cypress tests to TS
 
 ### Day 7:
@@ -377,8 +377,8 @@ Reference: Functions
 
 ---
 
-# 🔴 WEEK 7–8: Playwright + CI/CD
-![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7–8.json)
+# 🔴 WEEK 7-8: Playwright + CI/CD
+![Week 7-8](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week7-8.json)
 
 📚 Use:
 - Playwright

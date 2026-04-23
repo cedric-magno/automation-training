@@ -77,6 +77,7 @@ Always:
   `C:\Users\Cedric\ced-projects\automation-training`  
   https://github.com/cedric-magno/automation-training  
 - Write 1-2 notes (what you learned / struggled with)
+- Put a tick '[X]' on the checkboxes for every part you finish
 
 💡 DEBUGGING RULE:
 If something doesn't work:

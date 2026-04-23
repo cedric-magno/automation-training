@@ -26,16 +26,35 @@ training workspace**.
 
 ## 🔹 Step-by-step: How to fork
 
-1.  Click the **Fork** button (top-right of this repository)
-2.  Select your GitHub account
-3.  Wait for GitHub to create your copy
-4.  Clone your fork locally:
+1. Click the **Fork** button (top-right of this repository)
+2. Select your GitHub account
+3. Wait for GitHub to create your copy
+4. Rename your forked repository:
+    - Go to your forked repo
+    - Click Settings
+    - Under Repository name, change it to:
+    ````
+    automation-training-[YOUR-NAME]
+    ```
+    - Example:
+    ```
+    automation-training-cedric
+    ```
+5. Clone your fork locally:
 
 ``` bash
-git clone https://github.com/YOUR-USERNAME/automation-training.git
+git clone https://github.com/[YOUR-USERNAME]/automation-training-[YOUR-NAME].git
 ```
-
-5.  Start following the learning plan and commit your progress
+6. Navigate into the project:
+``` bash
+cd automation-training-[YOUR-NAME]
+```
+7. (Optional but recommended) Connect to the original template as upstream:
+``` bash
+git remote add upstream https://github.com/cedric-magno/automation-training-template.git
+```
+This allows you to pull future updates from the template if needed using 'git fetch upstream' or 'git pull upstream main'. 
+8. Start following the learning plan and commit your progress
 
 ------------------------------------------------------------------------
 

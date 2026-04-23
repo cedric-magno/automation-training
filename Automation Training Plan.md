@@ -17,34 +17,52 @@
 
 # 📚 TABLE OF CONTENTS
 
-- [HOW TO USE THIS PLAN](#-how-to-use-this-daily-plan)
+- [Setup](#️-setup)
+- [Git Basics](#-git-basics-required)
+- [How to Use This Plan](#-how-to-use-this-daily-plan)
 - [WEEK 0-1: JavaScript](#-week-0-1-javascript-for-testers-foundation)
-  - [Day 1](#-day-1--variables--console)
-  - [Day 2](#-day-2--functions-core)
-  - [Day 3](#-day-3--arrays)
-  - [Day 4](#-day-4--objects-very-important)
-  - [Day 5](#-day-5--combine-arrays--objects)
-  - [Day 6](#-day-6--asyncawait-critical)
-  - [Day 7](#-day-7--mini-project)
 - [WEEK 2: Cypress Basics](#-week-2-cypress-basics)
-  - [Day 1 - Setup Cypress](#-day-1---setup-cypress)
-  - [Day 2 - First Test](#-day-2---first-test)
-  - [Day 3 - Login Test](#-day-3---login-test)
-  - [Day 4 - Selectors](#-day-4---selectors)
-  - [Day 5 - Form Testing](#-day-5---form-testing)
-  - [Day 6 - Refactor](#-day-6---refactor)
-  - [Day 7 - Review](#-day-7---review)
 - [WEEK 3: Cypress Advanced](#-week-3-cypress-advanced)
-  - [Day 1 - Fixtures](#-day-1---fixtures)
-  - [Day 2 - Custom Commands](#-day-2---custom-commands)
-  - [Day 3 - API Testing](#-day-3---api-testing)
-  - [Day 4 - POST Request](#-day-4---post-request)
-  - [Day 5 - Hooks](#-day-5---hooks)
-  - [Day 6 - Refactor](#-day-6---refactor-1)
-  - [Day 7 - Review](#-day-7---review--prep-for-ts)
 - [WEEK 4-5: TypeScript](#--week-4-5-typescript-transition)
 - [WEEK 6: Framework Design](#-week-6-framework-design)
 - [WEEK 7-8: Playwright + CI/CD](#-week-7-8-playwright--cicd)
+- [Next Steps](#-next-steps)
+- [Common Mistakes](#️-common-mistakes)
+- [Final Note](#-final-note)
+---
+
+# ⚙️ SETUP
+
+Install the following:
+
+- Node.js (LTS version)
+- Git
+- VS Code
+
+Create accounts:
+- GitHub account
+
+Verify installation:
+- node -v
+- npm -v
+- git --version
+
+VS Code Extensions:
+- ESLint
+- Prettier
+- Cypress Snippets (optional)
+
+# 🔧 GIT BASICS (REQUIRED)
+
+Learn:
+- git init
+- git add .
+- git commit -m "message"
+- git push
+
+Exercise:
+- Create your first repository
+- Push a JS file
 
 ---
 
@@ -59,6 +77,13 @@ Always:
   `C:\Users\Cedric\ced-projects\automation-training`  
   https://github.com/cedric-magno/automation-training  
 - Write 1-2 notes (what you learned / struggled with)
+
+💡 DEBUGGING RULE:
+If something doesn't work:
+1. Check error message carefully
+2. Add console.log to debug values
+3. Search error in Google
+4. Retry in small steps (don’t solve everything at once)
 
 ---
 
@@ -83,6 +108,16 @@ Always:
 
 ### EXERCISE:
 - [x] Change values and observe output
+
+```
+const username = "admin";
+const password = "1234";
+let isLoggedIn = false;
+
+console.log(username);
+console.log(password);
+console.log(isLoggedIn);
+```
 
 ### OUTPUT:
 - [x] 5+ variables created
@@ -118,6 +153,21 @@ Reference: Grammars and types
   - validateUser
   - logout
 
+```
+const validUsername = "admin";
+const validPassword = "1234";
+
+function login(username, password) {
+  if (username === validUsername && password === validPassword) {
+    return true;
+  }
+  return false;
+}
+
+console.log(login("admin", "1234")); // true
+console.log(login("wrong", "1234")); // false
+```
+
 ### OUTPUT:
 - [x] 3 working functions
 
@@ -140,6 +190,16 @@ Reference: Functions
 - [x] Filter active users
 - [x] Count users
 
+```
+const users = [
+  { username: "user1", active: true },
+  { username: "user2", active: false },
+];
+
+const activeUsers = users.filter(user => user.active);
+console.log(activeUsers);
+```
+
 ### OUTPUT:
 - [x] 3 array operations
 
@@ -159,6 +219,17 @@ Reference: Functions
 - [ ] Modify object values
 - [ ] Combine with array (list of users)
 
+```
+const user = {
+  username: "admin",
+  password: "1234",
+  role: "admin"
+};
+
+user.role = "user";
+console.log(user);
+```
+
 ### OUTPUT:
 - [ ] Array of objects (test data)
 
@@ -177,6 +248,16 @@ Reference: Functions
 - [ ] Filter admin users
 - [ ] Get usernames only
 
+```
+const users = [
+  { username: "admin", role: "admin" },
+  { username: "user1", role: "user" }
+];
+
+const admins = users.filter(u => u.role === "admin");
+console.log(admins);
+```
+
 ### OUTPUT:
 - [ ] Test data simulation ready
 
@@ -193,6 +274,23 @@ Reference: Functions
 
 ### EXERCISE:
 - [ ] Simulate API call (setTimeout or promise)
+
+```
+function fetchUser() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ username: "cedric" });
+    }, 1000);
+  });
+}
+
+async function getUser() {
+  const user = await fetchUser();
+  console.log(user);
+}
+
+getUser();
+```
 
 ### OUTPUT:
 - [ ] 2 async functions
@@ -213,11 +311,29 @@ Reference: Functions
 
 ---
 
+## 🧪 TESTING FUNDAMENTALS (BEFORE CYPRESS)
+
+Learn:
+- [ ] What is a test case?
+- [ ] Assertion vs verification
+- [ ] Positive vs negative testing
+- [ ] Test data management
+- [ ] Flaky tests (what & why)
+
+Exercise:
+- [ ] Write 5 manual test cases for login feature
+
+---
+
 # 🔵 WEEK 2: Cypress Basics
 ![Week 2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week2.json)
 
 📚 Use:
 - Cypress Documentation
+
+🌐 TEST SITES:
+- https://example.cypress.io
+- https://www.saucedemo.com - for login tests
 
 ---
 
@@ -230,6 +346,12 @@ Reference: Functions
 ### DO:
 - [ ] Install Cypress
 - [ ] Run sample test
+
+```
+npm init -y
+npm install cypress --save-dev
+npx cypress open
+```
 
 ### OUTPUT:
 - [ ] Cypress project running
@@ -249,6 +371,11 @@ Reference: Functions
 ### EXERCISE:
 - [ ] Assert URL or title
 
+```
+cy.visit("https://example.cypress.io");
+cy.url().should("include", "cypress");
+```
+
 ### OUTPUT:
 - [ ] 1 working test
 
@@ -264,6 +391,17 @@ Reference: Functions
 - [ ] Add success assertion
 - [ ] Add failure test
 
+```
+cy.visit("https://www.saucedemo.com");
+
+cy.get('[data-test="username"]').type("standard_user");
+cy.get('[data-test="password"]').type("secret_sauce");
+
+cy.get('[data-test="login-button"]').click();
+
+cy.url().should("include", "inventory");
+```
+
 ### OUTPUT:
 - [ ] 2 login tests
 
@@ -273,6 +411,15 @@ Reference: Functions
 
 ### LEARN:
 - [ ] Good vs bad selectors
+
+✅ Use:
+
+data-test attributes
+
+❌ Avoid:
+
+CSS classes
+XPath (if unstable)
 
 ### DO:
 - [ ] Replace fragile selectors
@@ -287,6 +434,7 @@ Reference: Functions
 ### DO:
 - [ ] Fill form fields
 - [ ] Submit form
+- [ ] Assert results
 
 ### OUTPUT:
 - [ ] 1 form test
@@ -319,17 +467,36 @@ Reference: Functions
 - [ ] Create JSON test data
 - [ ] Use cy.fixture()
 
+```
+cy.fixture("users.json").then(data => {
+  cy.log(data);
+});
+```
+
 ### OUTPUT:
 - [ ] External test data used
 
 ## 📅 DAY 2 - Custom Commands
 - [ ] Create cy.login()
 
+```
+Cypress.Commands.add("login", (username, password) => {
+  cy.get('[data-test="username"]').type(username);
+  cy.get('[data-test="password"]').type(password);
+});
+```
+
 ### OUTPUT:
 - [ ] Reusable command
 
 ## 📅 DAY 3 - API Testing
+Use:
+https://jsonplaceholder.typicode.com
 - [ ] cy.request GET
+
+```
+cy.request("GET", "/posts").its("status").should("eq", 200);
+```
 
 ### OUTPUT:
 - [ ] API test
@@ -337,12 +504,22 @@ Reference: Functions
 ## 📅 DAY 4 - POST Request
 - [ ] Send POST request
 - [ ] Validate response
+```
+cy.request("POST", "/posts", {
+  title: "test"
+}).its("status").should("eq", 201);
+```
 
 ### OUTPUT:
 - [ ] API validation test
 
 ## 📅 DAY 5 - Hooks
 - [ ] beforeEach setup
+```
+beforeEach(() => {
+  cy.visit("/");
+});
+```
 
 ### OUTPUT:
 - [ ] Cleaner test flow
@@ -356,6 +533,8 @@ Reference: Functions
 ### CHECK:
 - [ ] Comfortable with Cypress?
 - [ ] Can debug basic issues?
+- [ ] Debug issues
+- [ ] Prepare for TypeScript
 
 ---
 
@@ -364,6 +543,14 @@ Reference: Functions
 
 📚 Use:
 - TypeScript Documentation
+
+Why TypeScript?
+- Prevent bugs early
+- Better IDE support
+
+Start SMALL:
+- Only add types to variables first
+- Don’t convert everything at once
 
 ## 📅 KEY DAILY PATTERN
 
@@ -384,10 +571,40 @@ Reference: Functions
 # 🟡 WEEK 6: Framework Design
 ![Week 6](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week6.json)
 
+Learn:
+- [ ] What is Page Object Model (POM)?
+- [ ] Why separate selectors?
+
+DO:
+- [ ] Create folder structure:
+  /pages
+  /tests
+  /fixtures
+
+- [ ] Create LoginPage.js:
+  methods:
+    - [ ] visit()
+    - [ ] login(username, password)
+
+Exercise:
+- Refactor login test to use LoginPage
 - [ ] Create Page Objects
 - [ ] Move selectors out of tests
 - [ ] Separate test data
 - [ ] Clean folder structure
+
+```
+class LoginPage {
+  visit() {
+    cy.visit("/");
+  }
+
+  login(username, password) {
+    cy.get("#user").type(username);
+    cy.get("#pass").type(password);
+  }
+}
+```
 
 ---
 
@@ -397,6 +614,37 @@ Reference: Functions
 📚 Use:
 - Playwright
 - GitHub Actions
+
+Install
+
+```
+npm init playwright@latest
+```
+
+Learn:
+- [ ] What is CI/CD?
+CI/CD Sample:
+```name: Run Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npx cypress run
+```
+
+- [ ] Why run tests in pipeline?
+
+DO:
+- [ ] Create .github/workflows/test.yml
+- [ ] Run Cypress tests on push
+
+Exercise:
+- [ ] Break a test and see pipeline fail
 
 ## 📅 KEY TASKS
 
@@ -408,6 +656,41 @@ Reference: Functions
 
 ---
 
+# 🚀 NEXT STEPS
+
+1. Build a REAL portfolio project:
+   - Full test suite for:
+     https://www.saucedemo.com
+   Include:
+   - UI tests
+   - API tests
+   - Page Object Model
+   - CI/CD pipeline
+
+2. Learn:
+   - Test reporting (Allure)
+   - Advanced Playwright
+   - Parallel execution
+
+3. Practice:
+   - Debugging flaky tests
+   - Writing stable selectors
+
+4. Prepare for interviews:
+   - Explain your framework design
+   - Walk through your GitHub repo
+
+5. Apply for roles:
+   - QA Automation Engineer
+   - SDET (Junior/Mid)
+
+# ⚠️ COMMON MISTAKES
+
+- Using unstable selectors
+- Hardcoding waits (cy.wait)
+- Copy-pasting without understanding
+- Not debugging failures
+
 # 📊 FINAL NOTE
 
 This version removes guesswork. If you follow it:
@@ -415,3 +698,4 @@ This version removes guesswork. If you follow it:
 - You’ll code every day  
 - You’ll build real projects  
 - You’ll understand what you’re doing (not just copy)
+

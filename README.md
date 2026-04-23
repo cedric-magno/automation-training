@@ -54,7 +54,8 @@ cd automation-training-[YOUR-NAME]
 git remote add upstream https://github.com/cedric-magno/automation-training-template.git
 ```
 This allows you to pull future updates from the template if needed using 'git fetch upstream' or 'git pull upstream main'. 
-8. Start following the learning plan and commit your progress
+8. Navigate  to 'Automation Training Plan.md' then Crtl+H and replace all 'cedric-magno/automation-training' to '[YOUR-USERNAME]/automation-training-[YOUR-NAME]'
+9. Start following the learning plan and commit your progress
 
 ------------------------------------------------------------------------
 

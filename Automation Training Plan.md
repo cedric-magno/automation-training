@@ -177,7 +177,7 @@ Reference: Functions
 
 ---
 
-## 📅 DAY 3 - Arrays
+## 🟢 DAY 3 - Arrays
 
 ### LEARN:
 - [x] Arrays and looping concepts
@@ -209,16 +209,16 @@ console.log(activeUsers);
 ## 📅 DAY 4 - Objects (VERY IMPORTANT)
 
 ### LEARN:
-- [ ] Object structure
-- [ ] Accessing properties
+- [X] Object structure
+- [X] Accessing properties
 
 ### DO:
-- [ ] Create user object:
+- [X] Create user object:
     { username, password, role }
 
 ### EXERCISE:
-- [ ] Modify object values
-- [ ] Combine with array (list of users)
+- [X] Modify object values
+- [X] Combine with array (list of users)
 
 ```
 const user = {
@@ -232,7 +232,7 @@ console.log(user);
 ```
 
 ### OUTPUT:
-- [ ] Array of objects (test data)
+- [X] Array of objects (test data)
 
 ---
 

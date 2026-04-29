@@ -71,3 +71,12 @@ for (let i = 0; i < users.length; i++) {
     const u = users[i];
     console.log(u.username);
 }
+
+// add new property to all users
+users.forEach(u => {
+    u.active = true; // this adds a new property called active to each user object and sets its value to true
+});
+console.log("User active status:");
+users.forEach(u => {  // u is the current user object in the loop
+    console.log(u.username + ": " + u.active);
+});

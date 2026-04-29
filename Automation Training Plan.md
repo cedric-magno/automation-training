@@ -239,15 +239,15 @@ console.log(user);
 ## 📅 DAY 5 - Combine Arrays + Objects
 
 ### LEARN:
-- [ ] Real-world data structures
+- [X] Real-world data structures
 
 ### DO:
-- [ ] Create test data:
+- [X] Create test data:
   multiple users with roles
 
 ### EXERCISE:
-- [ ] Filter admin users
-- [ ] Get usernames only
+- [X] Filter admin users
+- [X] Get usernames only
 
 ```
 const users = [
@@ -260,7 +260,7 @@ console.log(admins);
 ```
 
 ### OUTPUT:
-- [ ] Test data simulation ready
+- [X] Test data simulation ready
 
 ---
 

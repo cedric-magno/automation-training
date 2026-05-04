@@ -305,14 +305,14 @@ getUser();
 ## 📅 DAY 7 - Mini Project
 
 ### BUILD:
-- [ ] Fake login system
+- [X] Fake login system
 
 ### REQUIREMENTS:
-- [ ] Validate user credentials
-- [ ] Return success/failure
+- [X] Validate user credentials
+- [X] Return success/failure
 
 ### OUTPUT:
-- [ ] Small working JS program
+- [X] Small working JS program
 
 ---
 

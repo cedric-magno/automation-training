@@ -267,14 +267,18 @@ console.log(admins);
 ## 📅 DAY 6 - Async/Await (CRITICAL)
 
 ### LEARN:
-- [ ] What is async/await?
-- [ ] Why async matters in testing
+- [X] What is async/await?
+  👉 https://javascript.info/async-await
+  👉 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+- [X] Why async matters in testing
+  👉 https://javascript.info/promise-basics
+  👉 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
 
 ### DO:
-- [ ] Create async function returning data
+- [X] Create async function returning data
 
 ### EXERCISE:
-- [ ] Simulate API call (setTimeout or promise)
+- [X] Simulate API call (setTimeout or promise)
 
 ```
 function fetchUser() {
@@ -294,7 +298,7 @@ getUser();
 ```
 
 ### OUTPUT:
-- [ ] 2 async functions
+- [X] 2 async functions
 
 ---
 
@@ -316,10 +320,15 @@ getUser();
 
 Learn:
 - [ ] What is a test case?
+  👉 https://www.guru99.com/test-case.html
 - [ ] Assertion vs verification
+  👉 https://www.guru99.com/assertion-vs-verification.html
 - [ ] Positive vs negative testing
+  👉 https://www.guru99.com/positive-negative-testing.html
 - [ ] Test data management
+  👉 https://www.guru99.com/test-data-management.html
 - [ ] Flaky tests (what & why)
+  👉 https://martinfowler.com/articles/nonDeterminism.html
 
 Exercise:
 - [ ] Write 5 manual test cases for login feature
@@ -342,7 +351,9 @@ Exercise:
 
 ### LEARN:
 - [ ] What is Cypress?
+👉 https://docs.cypress.io/guides/overview/why-cypress
 - [ ] Test structure (describe, it)
+👉 https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests
 
 ### DO:
 - [ ] Install Cypress
@@ -363,7 +374,9 @@ npx cypress open
 
 ### LEARN:
 - [ ] cy.visit
+  👉 https://docs.cypress.io/api/commands/visit
 - [ ] cy.get
+  👉 https://docs.cypress.io/api/commands/get
 
 ### DO:
 - [ ] Open a demo site
@@ -412,6 +425,7 @@ cy.url().should("include", "inventory");
 
 ### LEARN:
 - [ ] Good vs bad selectors
+  👉 https://docs.cypress.io/guides/references/best-practices#Selecting-Elements
 
 ✅ Use:
 
@@ -465,6 +479,12 @@ XPath (if unstable)
 ![Week 3](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week3.json)
 
 ## 📅 DAY 1 - Fixtures
+
+### LEARN:
+- [ ] Fixtures concept
+  👉 https://docs.cypress.io/api/commands/fixture
+
+### DO:
 - [ ] Create JSON test data
 - [ ] Use cy.fixture()
 
@@ -478,6 +498,12 @@ cy.fixture("users.json").then(data => {
 - [ ] External test data used
 
 ## 📅 DAY 2 - Custom Commands
+
+### LEARN:
+- [ ] Custom commands
+  👉 https://docs.cypress.io/api/cypress-api/custom-commands
+
+### DO:
 - [ ] Create cy.login()
 
 ```
@@ -493,7 +519,11 @@ Cypress.Commands.add("login", (username, password) => {
 ## 📅 DAY 3 - API Testing
 Use:
 https://jsonplaceholder.typicode.com
+
+### LEARN:
 - [ ] cy.request GET
+  👉 https://docs.cypress.io/api/commands/request
+
 
 ```
 cy.request("GET", "/posts").its("status").should("eq", 200);
@@ -503,6 +533,12 @@ cy.request("GET", "/posts").its("status").should("eq", 200);
 - [ ] API test
 
 ## 📅 DAY 4 - POST Request
+
+### LEARN:
+- [ ] POST request
+  👉 https://docs.cypress.io/api/commands/request#Arguments
+
+### DO:
 - [ ] Send POST request
 - [ ] Validate response
 ```
@@ -515,6 +551,12 @@ cy.request("POST", "/posts", {
 - [ ] API validation test
 
 ## 📅 DAY 5 - Hooks
+
+### LEARN:
+- [ ] beforeEach
+  👉 https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Hooks
+
+### DO:
 - [ ] beforeEach setup
 ```
 beforeEach(() => {
@@ -549,6 +591,14 @@ Why TypeScript?
 - Prevent bugs early
 - Better IDE support
 
+### LEARN:
+- [ ] Add types to variables
+  👉 https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+- [ ] Type functions
+  👉 https://www.typescriptlang.org/docs/handbook/2/functions.html
+- [ ] Convert Cypress tests to TS
+  👉 https://docs.cypress.io/guides/tooling/typescript-support
+
 Start SMALL:
 - Only add types to variables first
 - Don’t convert everything at once
@@ -574,7 +624,9 @@ Start SMALL:
 
 Learn:
 - [ ] What is Page Object Model (POM)?
+  👉 https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/
 - [ ] Why separate selectors?
+  👉 https://docs.cypress.io/guides/references/best-practices#Organizing-Tests-Logging-In-Controlling-State
 
 DO:
 - [ ] Create folder structure:
@@ -624,6 +676,7 @@ npm init playwright@latest
 
 Learn:
 - [ ] What is CI/CD?
+  👉 https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
 CI/CD Sample:
 ```name: Run Tests
 
@@ -639,6 +692,7 @@ jobs:
 ```
 
 - [ ] Why run tests in pipeline?
+  👉 https://martinfowler.com/articles/continuousIntegration.html
 
 DO:
 - [ ] Create .github/workflows/test.yml
@@ -699,4 +753,3 @@ This version removes guesswork. If you follow it:
 - You’ll code every day  
 - You’ll build real projects  
 - You’ll understand what you’re doing (not just copy)
-

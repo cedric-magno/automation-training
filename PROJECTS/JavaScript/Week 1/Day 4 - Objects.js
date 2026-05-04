@@ -1,3 +1,9 @@
+/*
+* Day 4 - Objects
+*   Create and manipulate objects
+*   Access and modify object properties
+*/
+
 const user = {
     username: "ced",
     password: "pass123",

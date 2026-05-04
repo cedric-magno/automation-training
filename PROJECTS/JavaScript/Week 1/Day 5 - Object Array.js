@@ -1,3 +1,8 @@
+/*
+* Day 5 - Object Array
+*   Filter and manipulate arrays of objects
+*/
+
 const users = [
     {
         id: 1,

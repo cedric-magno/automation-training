@@ -1,3 +1,13 @@
+/*
+* Day 3.1 - Loops
+*   For loop
+*   While loop
+*   Do-while loop
+*   For-of loop
+*   For-in loop
+*   forEach loop
+*/
+
 // For loop example: Print numbers from 1 to 5
 console.log("For loop example:");
 for (let i = 1; i <= 5; i++) {

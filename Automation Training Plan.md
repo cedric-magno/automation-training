@@ -2474,5 +2474,3 @@ This plan was designed for hands-on learners. If you follow it:
 **The industry is moving fast. Playwright is the right bet for 2026.**
 
 ---
-
-*Last updated: May 2026 | Based on 2026 job market data*

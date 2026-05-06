@@ -170,16 +170,16 @@ Learn:
 ## 🟢 DAY 1 – Variables + Console
 
 ### LEARN:
-- [ ] What is a variable?
+- [X] What is a variable?
   👉 https://javascript.info/variables
   👉 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types
-- [ ] `const` vs `let` vs `var`
+- [X] `const` vs `let` vs `var`
   👉 https://javascript.info/variables#modern-variable-declaration
 
 ### DO:
-- [ ] Create variables: `username`, `password`, `isLoggedIn`, `attempts`
-- [ ] Print all values using `console.log()`
-- [ ] Try changing a `const` and observe the error
+- [X] Create variables: `username`, `password`, `isLoggedIn`, `attempts`
+- [X] Print all values using `console.log()`
+- [X] Try changing a `const` and observe the error
 
 ### EXERCISES:
 ```js
@@ -202,13 +202,13 @@ console.log(greeting);
 ```
 
 ### CHALLENGE:
-- [ ] Create a variable for `maxAttempts = 3`
-- [ ] Print a message: `"Remaining attempts: X"` using template literals
-- [ ] Try to reassign a `const` — read and explain the error
+- [X] Create a variable for `maxAttempts = 3`
+- [X] Print a message: `"Remaining attempts: X"` using template literals
+- [X] Try to reassign a `const` — read and explain the error
 
 ### OUTPUT:
-- [ ] 6+ variables created
-- [ ] 1 JS file committed to GitHub
+- [X] 6+ variables created
+- [X] 1 JS file committed to GitHub
 
 ### Notes:
 ```
@@ -220,16 +220,16 @@ console.log(greeting);
 ## 🟢 DAY 2 – Functions
 
 ### LEARN:
-- [ ] What is a function?
+- [X] What is a function?
   👉 https://javascript.info/function-basics
-- [ ] Parameters and return values
+- [X] Parameters and return values
   👉 https://javascript.info/function-basics#parameters
-- [ ] Arrow functions
+- [X] Arrow functions
   👉 https://javascript.info/arrow-functions-basics
 
 ### DO:
-- [ ] Create `login(username, password)` returning `true` or `false`
-- [ ] Create an arrow function version of the same
+- [X] Create `login(username, password)` returning `true` or `false`
+- [X] Create an arrow function version of the same
 
 ### EXERCISES:
 ```js
@@ -263,13 +263,13 @@ console.log(greetUser()); // uses defaults
 ```
 
 ### CHALLENGE:
-- [ ] Create a `logout()` function that returns `"Logged out successfully"`
-- [ ] Create a `validatePassword(password)` function that checks if password length is at least 8 characters
-- [ ] Call all three functions and log the results
+- [X] Create a `logout()` function that returns `"Logged out successfully"`
+- [X] Create a `validatePassword(password)` function that checks if password length is at least 8 characters
+- [X] Call all three functions and log the results
 
 ### OUTPUT:
-- [ ] 4+ working functions (regular + arrow)
-- [ ] File committed
+- [X] 4+ working functions (regular + arrow)
+- [X] File committed
 
 ### Notes:
 ```
@@ -281,14 +281,14 @@ console.log(greetUser()); // uses defaults
 ## 📅 DAY 3 – Arrays
 
 ### LEARN:
-- [ ] Arrays and looping
+- [X] Arrays and looping
   👉 https://javascript.info/array
-- [ ] `map()`, `filter()`, `find()`, `forEach()`
+- [X] `map()`, `filter()`, `find()`, `forEach()`
   👉 https://javascript.info/array-methods
 
 ### DO:
-- [ ] Create an array of user objects
-- [ ] Use `map()`, `filter()`, `find()`
+- [X] Create an array of user objects
+- [X] Use `map()`, `filter()`, `find()`
 
 ### EXERCISES:
 ```js
@@ -321,26 +321,26 @@ users.forEach(user => {
 ```
 
 ### CHALLENGE:
-- [ ] Filter only `"admin"` role users
-- [ ] Create a new array with only `{ username, active }` properties (use `map`)
-- [ ] Check if ANY inactive user exists using `.some()`
+- [X] Filter only `"admin"` role users
+- [X] Create a new array with only `{ username, active }` properties (use `map`)
+- [X] Check if ANY inactive user exists using `.some()`
 
 ### OUTPUT:
-- [ ] 5+ array operations working
+- [X] 5+ array operations working
 
 ---
 
 ## 📅 DAY 4 – Objects (VERY IMPORTANT)
 
 ### LEARN:
-- [ ] Object structure and properties
+- [X] Object structure and properties
   👉 https://javascript.info/object
-- [ ] Destructuring
+- [X] Destructuring
   👉 https://javascript.info/destructuring-assignment
 
 ### DO:
-- [ ] Create a `user` object with multiple properties
-- [ ] Read, update, and delete properties
+- [X] Create a `user` object with multiple properties
+- [X] Read, update, and delete properties
 
 ### EXERCISES:
 ```js
@@ -378,21 +378,21 @@ console.log(testConfig.timeouts.medium);
 ```
 
 ### CHALLENGE:
-- [ ] Add a method `getDisplayName()` to the user object that returns `"username (role)"`
-- [ ] Create a `testData` object containing both valid AND invalid login credentials
-- [ ] Destructure the nested credentials and print them
+- [X] Add a method `getDisplayName()` to the user object that returns `"username (role)"`
+- [X] Create a `testData` object containing both valid AND invalid login credentials
+- [X] Destructure the nested credentials and print them
 
 ### OUTPUT:
-- [ ] Object with nested data created and manipulated
+- [X] Object with nested data created and manipulated
 
 ---
 
 ## 📅 DAY 5 – Combine Arrays + Objects
 
 ### LEARN:
-- [ ] Arrays of objects
+- [X] Arrays of objects
   👉 https://javascript.info/array-of-objects
-- [ ] Spread operator
+- [X] Spread operator
   👉 https://javascript.info/rest-parameters-spread
 
 ### EXERCISES:
@@ -423,18 +423,18 @@ console.log("Use for success test:", successUser.username);
 ```
 
 ### CHALLENGE:
-- [ ] Add a `description` property to each test user explaining what is being tested
-- [ ] Create a function `getUsersByResult(result)` that returns all users matching that expected result
-- [ ] Print a formatted summary of all test users
+- [X] Add a `description` property to each test user explaining what is being tested
+- [X] Create a function `getUsersByResult(result)` that returns all users matching that expected result
+- [X] Print a formatted summary of all test users
 
 ---
 
 ## 📅 DAY 6 – Async/Await (CRITICAL FOR PLAYWRIGHT)
 
 ### LEARN:
-- [ ] Promises and async/await
+- [X] Promises and async/await
   👉 https://javascript.info/async-await
-- [ ] Why async matters in testing
+- [X] Why async matters in testing
   👉 https://javascript.info/promise-basics
 
 ### EXERCISES:
@@ -478,8 +478,8 @@ loadMultipleUsers();
 ```
 
 ### CHALLENGE:
-- [ ] Create an async function `simulateLogin(username, password)` that resolves after 1 second with `{ success: true }` if credentials match, or rejects with an error if not
-- [ ] Call it with both valid and invalid credentials using `try/catch`
+- [X] Create an async function `simulateLogin(username, password)` that resolves after 1 second with `{ success: true }` if credentials match, or rejects with an error if not
+- [X] Call it with both valid and invalid credentials using `try/catch`
 
 ---
 
@@ -488,11 +488,11 @@ loadMultipleUsers();
 ### BUILD: A command-line login simulator
 
 ### REQUIREMENTS:
-- [ ] Array of valid users stored as objects
-- [ ] `login(username, password)` function (async)
+- [X] Array of valid users stored as objects
+- [X] `login(username, password)` function (async)
 - [ ] Handles: valid login, wrong password, locked account, max attempts (3)
-- [ ] All functions use `async/await`
-- [ ] Committed to GitHub
+- [X] All functions use `async/await`
+- [X] Committed to GitHub
 
 ```js
 // Starter structure — complete the rest yourself
@@ -527,21 +527,21 @@ runTests();
 ## 🧪 TESTING FUNDAMENTALS (BEFORE PLAYWRIGHT)
 
 Learn the theory before writing tests:
-- [ ] What is a test case?
+- [X] What is a test case?
   👉 https://www.guru99.com/test-case.html
-- [ ] Validation vs Verification
+- [X] Validation vs Verification
   👉 https://www.guru99.com/verification-v-s-validation-in-a-software-testing.html
-- [ ] Positive vs Negative Testing
+- [X] Positive vs Negative Testing
   👉 https://www.guru99.com/positive-and-negative-testing.html
-- [ ] Test Data
+- [X] Test Data
   👉 https://www.guru99.com/software-testing-test-data.html
-- [ ] What are Flaky Tests?
+- [X] What are Flaky Tests?
   👉 https://www.jetbrains.com/teamcity/ci-cd-guide/concepts/flaky-tests/
-- [ ] AAA Pattern (Arrange-Act-Assert)
+- [X] AAA Pattern (Arrange-Act-Assert)
   👉 https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/
 
 **Exercise — Write Manual Test Cases:**
-- [ ] Write 5 manual test cases for the SauceDemo login page
+- [X] Write 5 manual test cases for the SauceDemo login page
   - Use this template: `Test ID | Description | Steps | Expected Result | Actual Result | Pass/Fail`
   - Cover: valid login, wrong password, empty fields, locked user, SQL injection attempt
 

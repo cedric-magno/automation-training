@@ -15,7 +15,6 @@
 ### Weekly Progress
 
 ![Week 0](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week0.json)
-![Week 1](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week1.json)
 ![Week 2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week2.json)
 ![Week 3](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week3.json)
 ![Week 4](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cedric-magno/automation-training/main/.github/progress-week4.json)
@@ -158,26 +157,6 @@ Learn:
 3. Search the exact error in Google or the official docs
 4. Break the problem into smaller pieces — don't solve everything at once
 5. If stuck for 20+ minutes, move on and come back later
-
-**📁 Recommended Folder Structure:**
-```
-automation-training/
-├── week-01-js/
-├── week-02-playwright/
-├── week-03-playwright/
-├── week-04-playwright/
-├── week-05-typescript/
-├── week-06-framework/
-├── week-07-advanced/
-├── week-08-api/
-├── week-09-cicd/
-├── week-10-portfolio/
-└── supplemental/
-    ├── cypress/
-    ├── selenium/
-    ├── appium/
-    └── ai-testing/
-```
 
 ---
 

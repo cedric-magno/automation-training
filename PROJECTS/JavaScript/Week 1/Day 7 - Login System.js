@@ -21,7 +21,7 @@ const readline = require('readline');
  * - role: user role (admin/user)
  */
 const userDatabase = [
-  { username: 'cmagno', password: 'password123', name: 'Cedric Magno', role: 'admin' },  
+  { username: 'cmagno', password: 'pword123', name: 'Cedric Magno', role: 'admin' },  
   { username: 'alice', password: 'password123', name: 'Alice Johnson', role: 'admin' },
   { username: 'bob', password: 'qwerty', name: 'Bob Smith', role: 'user' },
   { username: 'carla', password: 'letmein', name: 'Carla Brown', role: 'user' }
@@ -131,23 +131,45 @@ function ask(question) {
  * FUNCTION: main
  * --------------
  * Entry point of the application.
- * Handles the full login flow.
+ * Handles the full login flow with attempt limiting.
  */
 async function main() {
-  // Ask user for username
-  const username = await ask('Enter username: ');
+  const maxAttempts = 3;
+  let attemptCount = 0;
 
-  // Ask user for password
-  const password = await ask('Enter password: ');
+  while (attemptCount < maxAttempts) {
+    // Ask user for username
+    const username = await ask('Enter username: ');
 
-  // Attempt login
-  const result = await login(username, password);
+    // Ask user for password
+    const password = await ask('Enter password: ');
 
-  // Display result
-  console.log(result);
+    // Attempt login
+    const result = await login(username, password);
 
-  // Close readline interface to end program
-  rl.close();
+    // Display result
+    console.log(result);
+
+    // Check if login was successful
+    if (result.startsWith('Welcome back')) {
+      // Close readline interface and exit
+      rl.close();
+      return;
+    }
+
+    // Increment attempt count on failure
+    attemptCount++;
+
+    // Check if max attempts reached
+    if (attemptCount >= maxAttempts) {
+      console.log('Account locked: Maximum login attempts exceeded.');
+      rl.close();
+      return;
+    }
+
+    // Notify user of remaining attempts
+    console.log(`Login failed. Attempts remaining: ${maxAttempts - attemptCount}\n`);
+  }
 }
 
 // Run the application

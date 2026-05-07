@@ -127,16 +127,16 @@ Learn:
 - `git checkout -b feature/branch-name`
 
 **Exercise — Your First Repo:**
-- [ ] Create a GitHub account
-- [ ] Create a repository called `automation-training`
-- [ ] Clone it locally
-- [ ] Create a `hello.js` file
-- [ ] Push it to GitHub
+- [X] Create a GitHub account
+- [X] Create a repository called `automation-training`
+- [X] Clone it locally
+- [X] Create a `hello.js` file
+- [X] Push it to GitHub
 
 **Bonus Exercise:**
-- [ ] Create a `.gitignore` file and add `node_modules/` to it
-- [ ] Create a `README.md` and describe what you're learning
-- [ ] Push both files and verify on GitHub
+- [X] Create a `.gitignore` file and add `node_modules/` to it
+- [X] Create a `README.md` and describe what you're learning
+- [X] Push both files and verify on GitHub
 
 ---
 
@@ -490,7 +490,7 @@ loadMultipleUsers();
 ### REQUIREMENTS:
 - [X] Array of valid users stored as objects
 - [X] `login(username, password)` function (async)
-- [ ] Handles: valid login, wrong password, locked account, max attempts (3)
+- [X] Handles: valid login, wrong password, locked account, max attempts (3)
 - [X] All functions use `async/await`
 - [X] Committed to GitHub
 
